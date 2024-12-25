@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gym Tracker</h1>
+  </header>
+  <main>
+    <section id="calendar-view">
+      <h2>Calendar View</h2>
+      <div id="calendar"></div>
+    </section>
+    <section id="log-form">
+      <h2>Log Workout for <span id="selected-date">Select a Date</span></h2>
+      <form id="workout-form">
+        <input type="text" id="exercise" placeholder="Exercise Name" required>
+        <input type="number" id="sets" placeholder="Sets" required>
+        <input type="number" id="reps" placeholder="Reps" required>
+        <input type="number" id="weight" placeholder="Weight (kg)" required>
+        <button type="submit">Add Workout</button>
+      </form>
+      <ul id="workout-list"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
